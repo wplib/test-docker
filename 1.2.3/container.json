@@ -1,0 +1,14 @@
+{
+	"project": "wplib",
+	"name": "test",
+	"version": "1.2.3",
+	"majorversion": "1.2",
+	"latest": "1",
+	"network": "--network wplibbox",
+	"ports": "-p 4242:80",
+	"volumes": "-v /var/www:/var/www",
+	"restart": "--restart no",
+	"args": "",
+	"env": "TEMPLATE_VERSION"
+}
+

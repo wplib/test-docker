@@ -1,0 +1,10 @@
+FROM alpine:3.7
+MAINTAINER WPLib Team <team@wplib.org>
+
+COPY files /
+
+RUN apk add --no-cache bash socat && chmod a+x /usr/local/bin/test.sh
+
+EXPOSE 80
+
+CMD ["/usr/local/bin/test.sh"]
